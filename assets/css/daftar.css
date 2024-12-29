@@ -1,0 +1,247 @@
+/* General Styling */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #C6E7FF; 
+    --light-red: #FFDDAE; 
+    --primary-black: #111; 
+    --gray: #D4F6FF; 
+    --background-color: #FBFBFB; 
+    --biru: #3D7EA6; 
+}
+
+/*utama*/
+body{
+    font-family: 'Lucida Bright', serif;
+    background-color: var(--primary-color);
+     color: var(--primary-black);
+     overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+section .container{
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kiri,
+.kanan{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+}
+/*navbar */
+header{
+    padding:0 1rem ;
+
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-size: 2rem;
+    color: var(--primary-black);
+
+}
+
+.navbar .logo span{
+    color: #4A628A;
+    font-weight: bold;
+}
+.navbar .links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.navbar .links a {
+    font-size: 1.5rem; 
+    color: #333;
+    text-decoration: none; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.navbar .links a:hover {
+    color: var(--primary-color); 
+    transform: scale(1.1); 
+}
+
+/*display*/
+.model {
+ padding: 4rem 0;
+}
+
+.model .kiri{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.model h1{
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 300;
+
+    line-height: 5.5rem;
+}
+.model h1 span{
+    color: var(--biru);
+}
+
+.model p {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 2rem 0;
+}
+.kanan {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
+.main-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.main-photo:active {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+/*aside*/
+aside {
+    font-family: 'Lucida Bright', serif;
+}
+
+/* Categories Section */
+.categories {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Top Rated Section */
+.top-rated {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Judul */
+aside h5 {
+    color: #3D7EA6;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* List Group Style */
+aside .list-group-item {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Hover effect */
+aside .list-group-item:hover {
+    background-color: #3D7EA6;
+    color: #ffffff;
+    transform: translateX(5px);
+}
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: var(--biru); 
+    color: #fff; 
+    padding: 40px 20px; 
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--gray); 
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc; 
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #FFD700; 
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #fff; 
+    text-decoration: underline;
+}
+
+
+.footer ul li a i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+
+.footer-copyright {
+    background-color: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    border-top: 1px solid #222; 
+}
+
+.footer-copyright p {
+    margin: 0;
+}
